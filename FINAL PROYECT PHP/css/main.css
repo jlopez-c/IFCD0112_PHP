@@ -1,0 +1,246 @@
+
+	/* GENERAL */		
+
+			* {
+				padding: 0px;
+				margin: 0px; }
+				
+			html {
+				height: 100%; }
+			
+			body {
+				background-image: url("../banderas/landscape.jpg");
+				background-size: 100% 100%; }
+			
+			.contenedor {
+				display: flex; }
+				
+			.subcontenedor {
+				width: 90%;
+				margin: auto; }
+				
+			header {
+				display: table;
+				width: 100%; }
+				
+			main {
+				display: flex; }
+				
+			div.altaAsincrona {
+				border: 1px solid black; 
+				box-sizing: border-box; 
+				width: 20%; }
+			
+		/* LINKS */
+		
+			a:hover {
+				color: hotpink; }
+				
+		/* BUSQUEDA Y LOGIN */		
+			
+			.busqueda {
+				float: right;
+				width: 90%; }
+				
+			.ir {
+				float: left; }
+			
+			.campobusqueda {
+				float: left;
+				padding-right: 10px; }
+			
+			.login {
+				float: right;
+				width: 40%;
+				padding: 0% 4%;
+				box-sizing: border-box; }
+				
+			.camposlogin {
+				float: left; }
+				
+			.loginusuario {
+				text-align: right; }
+			
+			.logout {
+				text-align: right;
+				color: red; }
+							
+		/* TABS Y TABLES */
+			
+			table {
+				width: 45%;
+				margin: auto; }
+			
+			th:nth-child(1) {
+				width: 10%; }
+				
+			th:nth-child(2) {
+				width: 42%; }
+				
+			td:nth-child(2), td:nth-child(3) {
+				text-align: center; }
+			
+			div#tabs-2 {
+				display: table; }
+				
+			#tabs {
+				width: 100%; }
+				
+		/* PAGINACION */
+		
+			.paginacion2 {
+				display: flex;
+				justify-content: center;
+				margin-top: 20px;}
+
+			.paginacion2 div {
+				padding: 20px;
+				border: 1px solid red;
+				box-sizing: border-box;}
+
+				
+		/* IMAGENES */
+				
+			.logo {
+				width: 10%;
+				float: left; }
+				
+			.anchura100 {
+				width: 100%; }
+			
+			.bandera {
+				border: solid black 2px; }
+				
+		/* ASINCRONO */
+			
+			.zonadatos {
+				width: 80%;
+				margin: auto;
+				background-color: #967a78;
+				height: max-content;
+				display: table; }
+				
+			.overlay {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				background: #41241061; }
+			
+			.oculto {
+				display: none; }
+				
+			.overlayusuario {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				color: white;
+				top: 0px;
+				left: 0px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 40px; }
+				
+		/* SINCRONO */		
+			
+			.paginacion {
+				background-color: lightgray;
+				border: solid black;
+				text-align: center; }
+				
+				
+				
+		/* CONSULTA 1 LVL. */
+		
+			div.clima {
+				width: 100%;
+				border: 1px solid red;
+				text-align: center;
+				box-sizing: border-box; }
+				
+			.climas {
+				 display: flex;
+				width: 60%;
+				float: left; }
+				
+			.consultaciudades {
+				width: 33.33%;
+				float: left;
+				padding: 0px 50px;
+				border: 1px solid green;
+				box-sizing: border-box; }
+				
+				
+		/* CONSULTA 2 LVL. */
+		
+			div.continente {
+				width: 100%;
+				text-align: center;
+				box-sizing: border-box; }
+				
+			.continentes {
+				width: 33.33%;
+				float: left; }
+				
+			.consultapaises {
+				width: 33.33%;
+				float: left;
+				padding: 0px 50px;
+				border: 1px solid green;
+				box-sizing: border-box; }
+				
+			
+				
+		/* ANIMACIONES */	
+		
+			.animfondo {
+				animation-duration: 10s;
+				animation-name: animfondo;
+				animation-iteration-count: infinite; }
+				
+			.animfondo2 {
+				animation-duration: 10s;
+				animation-name: animfondo2;
+				animation-iteration-count: infinite; }	
+
+			.animfondo3 {
+				background: linear-gradient( 360deg, white, black) 0% 0% / 100% 250%;
+				animation: 2s ease 0s infinite normal none running animfondo3; }
+
+				@keyframes animfondo31{
+					0%{
+						background-position:0% 0%; }
+					100%{
+						background-position: 100% 100%; }
+				}
+
+
+				@keyframes animfondo {
+				  0% {
+					background-color: white;
+				  }
+				  
+				  50% {
+					
+					background: linear-gradient(320deg, #f9fbfa, #101010);
+				  }
+
+				  100% {
+					background-color: white;
+				  }
+				}
+
+				@keyframes animfondo2 {
+				  0% {
+					background-color: black;
+				  }
+				  
+				  50% {
+					background-color: red;
+				  }
+
+				  100% {
+					background-color: black;
+				  }
+				}
